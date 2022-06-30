@@ -4,26 +4,6 @@ body {
   background-color: #f7f7f9;
 }
 
-.status_bar {
-  display: flex;
-  justify-content: space-between;
-  height: 44px;
-  background-color: #fff;
-  align-items: baseline;
-}
-
-.time {
-  margin-left: 21px;
-  align-self: center;
-  height: 44px;
-}
-
-.status_icons {
-  margin-right: 21px;
-  margin-top: 4px;
-  align-self: center;
-}
-
 .tool_bar {
   display: flex;
   height: 48px;
