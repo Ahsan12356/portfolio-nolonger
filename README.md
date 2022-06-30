@@ -2,7 +2,7 @@
 
 # Portfolio
 
-> Hello Microverse project using html, css.
+> Developed Portfolio skeleton project using html, css. Used mobile first approach.
 
 ## Built With
 - html
