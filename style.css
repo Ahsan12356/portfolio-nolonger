@@ -1,7 +1,7 @@
 body {
   margin: auto;
   width: 375px;
-  background-color: #f7f7f9;
+  background-color: #e5e5e5;
 }
 
 .tool_bar {
@@ -24,19 +24,23 @@ body {
   color: #6070ff;
 }
 
-.tool_bar a.bars {
+.tool_bar button.bars {
   /* padding-top: 4px; */
   margin-right: 24px;
   align-self: center;
   text-align: center;
   padding-top: 8px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
 }
 
 .headline_sect {
   background-image: url("images/header-shapes-mobile.png"), url("images/header-background-mobile.png");
   background-repeat: no-repeat;
-  border: 1px solid #fff;
+  border: 1px solid #f7f7f9;
   border-bottom-left-radius: 82px;
+  background-color: #f7f7f9;
 }
 
 .headline_sect h1 {
@@ -76,5 +80,305 @@ body {
   justify-content: space-between;
   margin-right: 180px;
   align-items: baseline;
-  margin-bottom: 295px;
+  margin-bottom: 292px;
+}
+
+.middle {
+  display: grid;
+  grid-template-rows: auto auto;
+  width: 375px;
+  background-color: #e5e5e5;
+}
+
+.cards {
+  display: grid;
+  grid-template-rows: auto auto auto auto;
+  grid-template-columns: 375px;
+  background-color: #fff;
+  margin-top: 26px;
+  padding-bottom: 114px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #dfe1e6;
+  margin-top: 88px;
+  background-color: #fff;
+  margin-left: 24px;
+  margin-right: 24px;
+  border-radius: 10px;
+}
+
+.card img {
+  margin-left: 16px;
+  margin-right: 16px;
+  margin-top: 16px;
+}
+
+.card h1 {
+  margin-left: 16px;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  margin-bottom: 0;
+  padding: 0;
+}
+
+.card ul.skills {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 0;
+  margin-top: 0;
+  margin-left: 16px;
+  margin-right: 74px;
+  margin-bottom: 0;
+  list-style-type: none;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 16px;
+  color: #7a869a;
+}
+
+.card ul.skills img {
+  margin-left: 12px;
+  margin-right: 12px;
+}
+
+.card ul.skills li.canopy {
+  color: #344563;
+}
+
+.card p.daily-text {
+  margin-top: 0;
+  margin-left: 16px;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: #344563;
+  margin-bottom: 0;
+}
+
+.card ul.langs {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  margin-top: 0;
+  margin-left: 16px;
+  margin-right: 108px;
+}
+
+.card ul.langs p {
+  text-align: center;
+  background-color: #ebebff;
+  border-radius: 8px;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  color: #6070ff;
+  padding: 5px;
+  margin-right: 8px;
+}
+
+.card .see-projects {
+  margin-left: 16px;
+  margin-right: 171px;
+  padding: 10px;
+  border: 1px solid #6070ff;
+  border-radius: 8px;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+  color: #396df2;
+  background-color: transparent;
+  cursor: pointer;
+  margin-bottom: 28px;
+}
+
+.card .see-projects:hover {
+  background: #6070ff;
+  color: #fff;
+}
+
+.card .see-projects:active {
+  background: #2230d2;
+  color: #fff;
+}
+
+.card .see-projects:disabled {
+  color: #5e6c84;
+  border-color: #c1c7d0;
+}
+
+.about_myself_section {
+  width: 375px;
+  background-color: #fff;
+  border-top-right-radius: 82px;
+}
+
+.about_myself {
+  display: flex;
+  flex-direction: column;
+  margin-left: 24px;
+  margin-right: 24px;
+  border-top-right-radius: 82px;
+  background-color: #fff;
+}
+
+.about_myself h1 {
+  margin-top: 114px;
+  width: fit-content;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  display: flex;
+  align-items: center;
+  color: #172b4d;
+  margin-bottom: 0;
+  padding: 0;
+  height: fit-content;
+}
+
+.about_myself p.about_p {
+  margin-top: 12px;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #344563;
+  margin-bottom: 0;
+}
+
+.about_myself p.about_lets {
+  margin-top: 12px;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #7f8cff;
+  margin-bottom: 0;
+}
+
+.about_myself ul.about_social {
+  margin-top: 16px;
+  display: flex;
+  justify-content: space-between;
+  margin-right: 180px;
+  list-style-type: none;
+  align-items: baseline;
+  padding: 0;
+  margin-bottom: 0;
+}
+
+.about_myself .about_button_resume {
+  margin-top: 12px;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+  color: #396df2;
+  background-color: transparent;
+  margin-right: 165px;
+  border: 1px solid #6070ff;
+  border-radius: 8px;
+  padding: 12px;
+  margin-bottom: 0;
+}
+
+.about_myself .about_button_resume:hover {
+  background: #6070ff;
+  color: #fff;
+}
+
+.about_myself .about_button_resume:active {
+  background: #2230d2;
+  color: #fff;
+}
+
+.about_myself .about_button_resume:disabled {
+  color: #5e6c84;
+  border-color: #c1c7d0;
+}
+
+.about_myself ul.lsf-list {
+  list-style-type: none;
+  padding: 0;
+  margin-left: 12px;
+  margin-right: 26px;
+}
+
+.about_myself ul.lsf-list button {
+  width: 100%;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+  border: none;
+  height: max-content;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.about_myself ul.lsf-list img {
+  margin-left: 50%;
+}
+
+.about_myself ul.lsf-list img.frameworks-rightarrow {
+  margin-left: 42%;
+}
+
+.about_myself ul.lsf-list img.skills-rightarrow {
+  margin-left: 65%;
+}
+
+.about_myself ul.lsf-list li {
+  align-items: baseline;
+}
+
+.lsf-list .languages-btn-content {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  justify-items: space-between;
+}
+
+.lsf-list ul.languages-btn-content li {
+  display: flex;
+  align-items: center;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  background: #f7f7f9;
+  border-radius: 8px;
+  height: 66px;
+  margin-bottom: 10px;
+}
+
+.lsf-list ul.languages-btn-content li img {
+  margin-left: 0;
+  margin-right: 16px;
 }

@@ -2,7 +2,7 @@
 
 # Portfolio
 
-> Developed Portfolio skeleton project using html, css. Used mobile first approach.
+> Developed Portfolio for mobile project using html, css. Used mobile first approach. Its actually second milestone of the project of [portfolio mobileversion skeleton](https://github.com/Ahsan12356/portfolio/pull/2).
 
 ## Built With
 - html
@@ -15,9 +15,8 @@
 
 👤 **Author1**
 
-- GitHub: [@Ahsan](https://github.com/Ahsan12356)
-
-
+- GitHub: [@Ahsan Ghazni Khan](https://github.com/Ahsan12356)
+- Facebook: [@Ahsan Ghazni Khan](https://www.facebook.com/me/)
 
 ## 🤝 Contributing
 
