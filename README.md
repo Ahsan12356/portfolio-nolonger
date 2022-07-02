@@ -2,7 +2,7 @@
 
 # Portfolio
 
-> Developed Portfolio for mobile project using html, css. Used mobile first approach. Its actually second milestone of the project of portfolio mobileversion skeleton.
+> Developed Portfolio for mobile project using html, css. Used mobile first approach. Its actually second milestone of the project of [portfolio mobileversion skeleton](https://github.com/Ahsan12356/portfolio/pull/2).
 
 ## Built With
 - html
