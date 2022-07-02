@@ -86,9 +86,8 @@ body {
 .middle {
   display: grid;
   grid-template-rows: auto auto;
-  width: 373px;
-  background-color: #fff;
-  border: 1px solid #fff;
+  width: 375px;
+  background-color: #e5e5e5;
 }
 
 .cards {
@@ -210,6 +209,21 @@ body {
   margin-bottom: 28px;
 }
 
+.card .see-projects:hover {
+  background: #6070ff;
+  color: #fff;
+}
+
+.card .see-projects:active {
+  background: #2230d2;
+  color: #fff;
+}
+
+.card .see-projects:disabled {
+  color: #5e6c84;
+  border-color: #c1c7d0;
+}
+
 .about_myself_section {
   width: 375px;
   background-color: #fff;
@@ -288,6 +302,21 @@ body {
   border-radius: 8px;
   padding: 12px;
   margin-bottom: 0;
+}
+
+.about_myself .about_button_resume:hover {
+  background: #6070ff;
+  color: #fff;
+}
+
+.about_myself .about_button_resume:active {
+  background: #2230d2;
+  color: #fff;
+}
+
+.about_myself .about_button_resume:disabled {
+  color: #5e6c84;
+  border-color: #c1c7d0;
 }
 
 .about_myself ul.lsf-list {
