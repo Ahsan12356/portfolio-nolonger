@@ -2,7 +2,7 @@
 
 # Portfolio
 
-> Developed Portfolio for mobile project using html, css. Used mobile first approach. Its actually second milestone of the project of portfolio mobileversion skeleton.
+> Developed Portfolio for mobile project using html, css. Used mobile first approach. Its actually third milestone of the project of portfolio mobileversion skeleton. In this mile stone of the project, we had to make footer of the project and contact us form. We have also used formspree.io website for data collection as instructed.
 
 ## Built With
 - html
