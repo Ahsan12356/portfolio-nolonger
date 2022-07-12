@@ -440,7 +440,7 @@ body {
   margin-bottom: 87px;
 }
 
-.contact_sect #contact_form ul {
+.contact_sect #contact_form {
   display: flex;
   flex-direction: column;
   width: 100;
