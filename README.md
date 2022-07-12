@@ -4,7 +4,7 @@
 
 >This is my portfolio website. It showcases my skills as software developer, experience that I have and the projects that I have worked on as a proof. Moreover, there is a button to download and get my resume. There are links to my social media platforms.
 
-It is a mobile-first layout which is also fully responsive to different screens including desktops and laptops.
+>It is a mobile-first layout which is also fully responsive to different screens including desktops and laptops.
 
 
 ## Built With
