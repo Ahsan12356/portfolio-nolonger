@@ -324,7 +324,7 @@ body {
   margin-right: 24px;
 }
 
-@media (min-width: 327px) {
+@media (min-width: 768px) {
   .about_myself {
     flex-direction: row;
     margin-left: 142px;
