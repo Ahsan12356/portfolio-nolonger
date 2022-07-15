@@ -1,6 +1,9 @@
 body {
-  margin: auto;
-  width: 375px;
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
   background-color: #e5e5e5;
 }
 
@@ -25,17 +28,51 @@ body {
 }
 
 .tool_bar button.bars {
-  margin-right: 24px;
+  padding-right: 24px;
+  margin-right: 0;
+  border: none;
   align-self: right;
   text-align: center;
   padding-top: 8px;
   background-color: transparent;
-  border: none;
   cursor: pointer;
+}
+
+.tool_bar .menu_items {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .tool_bar button.bars {
+    display: none;
+  }
+
+  .tool_bar .menu_items {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+    column-gap: 32px;
+    padding-right: 164px;
+    margin: 0;
+    list-style: none;
+  }
+
+  .tool_bar .menu_items a {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+    color: #344563;
+    text-decoration: none;
+  }
 }
 
 .middle {
   background: #f7f7f9;
+  padding: 0;
+  margin: 0;
 }
 
 .headline_sect {
@@ -46,6 +83,18 @@ body {
   border: 1px solid #f7f7f9;
   border-bottom-left-radius: 82px;
   background-color: #fff;
+}
+
+@media (min-width: 768px) {
+  .headline_sect {
+    background-image: url('images/header-shapes-desktop.png');
+  }
+
+  .headline_sect h1 {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 60px;
+  }
 }
 
 .headline_sect h1 {
@@ -79,23 +128,36 @@ body {
 }
 
 .headline_sect ul {
-  padding: 0;
+  padding-left: 0;
   margin-left: 24px;
   list-style-type: none;
   display: flex;
-  justify-content: space-between;
-  margin-right: 180px;
   align-items: baseline;
   margin-bottom: 292px;
+  padding-bottom: 0;
+}
+
+.headline_sect ul li {
+  margin-right: 12px;
 }
 
 .cards {
   display: grid;
   grid-template-rows: auto auto auto auto;
-  grid-template-columns: 375px;
   row-gap: 88px;
+  padding: 0;
+  margin-left: 0;
+  margin-right: 0;
   margin-top: 114px;
   margin-bottom: 114px;
+}
+
+@media (min-width: 768px) {
+  .cards {
+    row-gap: 142px;
+    margin-top: 142px;
+    margin-bottom: 142px;
+  }
 }
 
 .card {
@@ -103,19 +165,48 @@ body {
   flex-direction: column;
   border: 1px solid #dfe1e6;
   background-color: #fff;
+  border-radius: 10px;
   margin-left: 24px;
   margin-right: 24px;
-  border-radius: 10px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+@media (min-width: 768px) {
+  .card {
+    flex-direction: row;
+    margin-left: 142px;
+    margin-right: 142px;
+  }
 }
 
 .card img {
   margin-left: 16px;
   margin-right: 16px;
   margin-top: 16px;
+  margin-bottom: 16px;
 }
 
-.card h2 {
+@media (min-width: 768px) {
+  .card img::after {
+    content: url('images/first_card_image_desktop.png');
+    margin-left: 24px;
+    margin-right: 24px;
+    margin-top: 24px;
+    margin-bottom: 24px;
+  }
+}
+
+.card_text {
+  display: flex;
+  flex-direction: column;
   margin-left: 16px;
+  margin-right: 16px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.card_text h2 {
   font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -125,15 +216,12 @@ body {
   padding: 0;
 }
 
-.card ul.skills {
+.card_text ul.skills {
   display: flex;
-  justify-content: space-between;
-  align-items: baseline;
   padding-left: 0;
   padding-right: 0;
   padding-top: 0;
   margin-top: 0;
-  margin-left: 16px;
   margin-right: 74px;
   margin-bottom: 0;
   list-style-type: none;
@@ -145,18 +233,17 @@ body {
   color: #7a869a;
 }
 
-.card ul.skills img {
+.card_text ul.skills img {
   margin-left: 12px;
   margin-right: 12px;
 }
 
-.card ul.skills li.canopy {
+.card_text ul.skills li.canopy {
   color: #344563;
 }
 
-.card p.daily-text {
+.card_text p.daily-text {
   margin-top: 0;
-  margin-left: 16px;
   font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -166,16 +253,15 @@ body {
   margin-bottom: 0;
 }
 
-.card ul.langs {
+.card_text ul.langs {
   display: flex;
   list-style-type: none;
   padding: 0;
   margin-top: 0;
-  margin-left: 16px;
   margin-right: 108px;
 }
 
-.card ul.langs p {
+.card_text ul.langs p {
   text-align: center;
   background-color: #ebebff;
   border-radius: 8px;
@@ -190,9 +276,13 @@ body {
   margin-right: 8px;
 }
 
-.card .see-projects {
-  margin-left: 16px;
-  margin-right: 171px;
+.btn_see-projects {
+  display: block;
+  margin-right: 16px;
+  padding-bottom: 40px;
+}
+
+.card_text .see-projects {
   padding: 10px;
   border: 1px solid #6070ff;
   border-radius: 8px;
@@ -204,20 +294,20 @@ body {
   color: #396df2;
   background-color: transparent;
   cursor: pointer;
-  margin-bottom: 28px;
+  margin-bottom: 0;
 }
 
-.card .see-projects:hover {
+.card_text .see-projects:hover {
   background: #6070ff;
   color: #fff;
 }
 
-.card .see-projects:active {
+.card_text .see-projects:active {
   background: #2230d2;
   color: #fff;
 }
 
-.card .see-projects:disabled {
+.card_text .see-projects:disabled {
   color: #5e6c84;
   border-color: #c1c7d0;
 }
@@ -232,6 +322,24 @@ body {
   flex-direction: column;
   margin-left: 24px;
   margin-right: 24px;
+}
+
+@media (min-width: 327px) {
+  .about_myself {
+    flex-direction: row;
+    margin-left: 142px;
+    margin-right: 142px;
+  }
+
+  .about_myself .about_text_sect {
+    margin-top: 142px;
+    width: 447px;
+  }
+
+  .about_myself .about_buttons_sect {
+    margin-top: 142px;
+    width: 447px;
+  }
 }
 
 .about_myself .spacer {
@@ -281,16 +389,22 @@ body {
 .about_myself ul.about_social {
   margin-top: 16px;
   display: flex;
-  justify-content: space-between;
-  margin-right: 180px;
   list-style-type: none;
   align-items: baseline;
   padding: 0;
   margin-bottom: 0;
 }
 
+.about_myself ul.about_social li {
+  margin-right: 12px;
+}
+
+.about_myself .get-resume-button {
+  padding: 0;
+  margin-top: 16px;
+}
+
 .about_myself .about_button_resume {
-  margin-top: 12px;
   font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -301,8 +415,7 @@ body {
   margin-right: 165px;
   border: 1px solid #6070ff;
   border-radius: 8px;
-  padding: 12px;
-  margin-bottom: 0;
+  padding: 10px;
 }
 
 .about_myself .about_button_resume:hover {
@@ -323,6 +436,12 @@ body {
 .about_myself ul.lsf-list {
   list-style-type: none;
   padding: 0;
+}
+
+@media (min-width: 768px) {
+  .about_myself ul.lsf-list {
+    padding-top: 96px;
+  }
 }
 
 .about_myself ul.lsf-list button {
@@ -388,8 +507,26 @@ body {
 }
 
 .lsf-list ul.languages-btn-content li img {
+  display: flex;
   margin-left: 12px;
   margin-right: 16px;
+}
+
+@media (min-width: 768px) {
+  .lsf-list .languages-btn-content {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .lsf-list ul.languages-btn-content li {
+    flex-direction: column;
+    padding: 20px;
+    justify-content: space-between;
+  }
+
+  .lsf-list ul.languages-btn-content li img {
+    margin-bottom: 12px;
+  }
 }
 
 /* skills button list ul */
@@ -398,8 +535,10 @@ body {
   padding-bottom: 0;
 }
 
+/*  the background color which would be visible from the the top left of the contact form section where it is curved from top left corner */
 .footer-background-color {
   background: #fff;
+  padding: 0;
 }
 
 /* Contact  form section */
@@ -409,6 +548,15 @@ body {
   background-image: url('images/contact-form-shapes-mobile.png');
   background-repeat: no-repeat;
   background-position: 100% 0;
+}
+
+@media (min-width: 768px) {
+  .contact_sect {
+    background-image: url('images/contact-form-background-shapes-desktop.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-origin: content-box;
+  }
 }
 
 /* Contact me text */
@@ -426,6 +574,12 @@ body {
   color: #fff;
 }
 
+@media (min-width: 768px) {
+  .contact_sect h2 {
+    padding-top: 142px;
+  }
+}
+
 /* contact me text */
 .contact_sect p.contact-p {
   padding: 0;
@@ -440,16 +594,28 @@ body {
   margin-bottom: 87px;
 }
 
+@media (min-width: 768px) {
+  .contact_sect p.contact-p {
+    margin-left: 300px;
+    margin-right: 300px;
+  }
+}
+
 .contact_sect #contact_form {
   display: flex;
   flex-direction: column;
-  width: 100;
   row-gap: 12px;
-  justify-content: space-between;
   margin-left: 24px;
   margin-right: 24px;
   list-style: none;
-  padding: 0;
+}
+
+@media (min-width: 768px) {
+  .contact_sect #contact_form {
+    align-items: center;
+    margin-left: 300px;
+    margin-right: 300px;
+  }
 }
 
 input#fname,
