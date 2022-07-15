@@ -178,6 +178,14 @@ body {
     margin-left: 142px;
     margin-right: 142px;
   }
+
+  .card:nth-child(2) {
+    flex-direction: row-reverse;
+  }
+
+  .card:nth-child(4) {
+    flex-direction: row-reverse;
+  }
 }
 
 .card img {
