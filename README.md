@@ -9,7 +9,7 @@
 
 ## Built With
 
-- HTML and CSS
+- HTML and CSS.
 
 ## How to use and run this project
 
