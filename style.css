@@ -175,7 +175,7 @@ body {
 @media (min-width: 768px) {
   .card {
     flex-direction: row;
-    margin-left: 142px;
+    margin-left: 8.875rem;
     margin-right: 142px;
   }
 
