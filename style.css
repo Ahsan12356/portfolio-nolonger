@@ -25,6 +25,12 @@ body {
   text-decoration: none;
   align-self: center;
   color: #6070ff;
+  animation-name: logo-rotate;
+  animation-duration: 1s;
+}
+
+@keyframes logo-rotate {
+  100% { transform: rotate(360deg); }
 }
 
 .tool_bar button.bars {
