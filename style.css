@@ -25,6 +25,12 @@ body {
   text-decoration: none;
   align-self: center;
   color: #6070ff;
+  animation-name: logo-rotate;
+  animation-duration: 1s;
+}
+
+@keyframes logo-rotate {
+  100% { transform: rotate(360deg); }
 }
 
 .tool_bar button.bars {
@@ -94,6 +100,17 @@ body {
     font-weight: 700;
     font-size: 48px;
     line-height: 60px;
+  }
+
+  .about_social li,
+  .headline_sect ul li {
+    transition-property: transform;
+    transition-duration: 1s;
+  }
+
+  .about_social li:hover,
+  .headline_sect ul li:hover {
+    transform: scale(1.5);
   }
 }
 
@@ -181,10 +198,12 @@ body {
 
   .card:nth-child(2) {
     flex-direction: row-reverse;
+    justify-content: space-between;
   }
 
   .card:nth-child(4) {
     flex-direction: row-reverse;
+    justify-content: space-between;
   }
 }
 
@@ -193,6 +212,8 @@ body {
   margin-right: 16px;
   margin-top: 16px;
   margin-bottom: 16px;
+  transition-property: transform;
+  transition-duration: 1s;
 }
 
 @media (min-width: 768px) {
@@ -203,6 +224,10 @@ body {
     margin-top: 24px;
     margin-bottom: 24px;
     width: 75%;
+  }
+
+  .card img:hover {
+    transform: scale(1.1);
   }
 }
 
@@ -304,10 +329,12 @@ body {
   background-color: transparent;
   cursor: pointer;
   margin-bottom: 0;
+  transition-property: background-color;
+  transition-duration: 1s;
 }
 
 .card_text .see-projects:hover {
-  background: #6070ff;
+  background-color: #6070ff;
   color: #fff;
 }
 
@@ -428,7 +455,7 @@ body {
 }
 
 .about_myself .about_button_resume:hover {
-  background: #6070ff;
+  background-color: #6070ff;
   color: #fff;
 }
 
