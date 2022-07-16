@@ -181,10 +181,12 @@ body {
 
   .card:nth-child(2) {
     flex-direction: row-reverse;
+    justify-content: space-between;
   }
 
   .card:nth-child(4) {
     flex-direction: row-reverse;
+    justify-content: space-between;
   }
 }
 
@@ -193,6 +195,8 @@ body {
   margin-right: 16px;
   margin-top: 16px;
   margin-bottom: 16px;
+  transition-property: transform;
+  transition-duration: 1s;
 }
 
 @media (min-width: 768px) {
@@ -202,6 +206,10 @@ body {
     margin-right: 24px;
     margin-top: 24px;
     margin-bottom: 24px;
+  }
+
+  .card img:hover {
+    transform: scale(1.1);
   }
 }
 
@@ -303,10 +311,12 @@ body {
   background-color: transparent;
   cursor: pointer;
   margin-bottom: 0;
+  transition-property: background-color;
+  transition-duration: 1s;
 }
 
 .card_text .see-projects:hover {
-  background: #6070ff;
+  background-color: #6070ff;
   color: #fff;
 }
 
