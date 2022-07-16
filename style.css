@@ -95,6 +95,17 @@ body {
     font-size: 48px;
     line-height: 60px;
   }
+
+  .about_social li,
+  .headline_sect ul li {
+    transition-property: transform;
+    transition-duration: 1s;
+  }
+
+  .about_social li:hover,
+  .headline_sect ul li:hover {
+    transform: scale(1.5);
+  }
 }
 
 .headline_sect h1 {
