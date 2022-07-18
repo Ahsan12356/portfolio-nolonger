@@ -15,17 +15,7 @@
 
 ## How to use and run this project
 
->To get a local copy up and running follow these simple example steps.
-
--Clone this repository with
-
-<code>git clone git@github.com:Ahsan12356/portfolio.git</code> using your terminal or command line.
-
--Change to the project directory by entering :
-
-<code>cd portfolio</code> in the terminal.
-
--run <code>code . </code>to open it in vscode
+>Click this link and my website will b opened in a new tab [Ahsan Ghazni Khan's Portfolio](https://ahsan12356.github.io/portfolio/)
 
 ## Project Status
 This project is still under development.
