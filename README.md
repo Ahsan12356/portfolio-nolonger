@@ -8,6 +8,8 @@
 
 >I have also implemented animations and transitions in this project collaboratively.
 
+>Implemented mobile menu button response using DOM manipulation, collaboratively with my coding partner.
+
 
 ## Built With
 
