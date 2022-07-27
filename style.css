@@ -138,7 +138,6 @@ body {
   transition-duration: 1s;
 }
 
-
 .crd img:hover {
   transform: scale(1.1);
 }
