@@ -17,7 +17,7 @@ div.style.position = 'fixed';
 const mblMnu = document.createElement('ul');
 mblMnu.className = 'mbl_mnu';
 mblMnu.style.marginTop = '62px';
-mblMnu.style.listStylem = 'none';
+mblMnu.style.listStyleType = 'none';
 for (let i = 0; i < 3; i += 1) {
   const mnuItm = document.createElement('li');
   mnuItm.style.marginBottom = '40px';
@@ -32,7 +32,7 @@ for (let i = 0; i < 3; i += 1) {
     lnk.href = '#abtmslf';
   } else {
     lnk.appendChild(document.createTextNode('Contact'));
-    lnk.href = '#footer';
+    lnk.href = '#ftr';
   }
   lnk.style.fontFamily = 'Poppins,sans-serif';
   lnk.style.fontStyle = 'normal';
